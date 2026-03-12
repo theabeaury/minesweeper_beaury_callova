@@ -19,7 +19,7 @@ int Cell::get_neighbours()
 {
     return _neighbours;
 }
-void Cell::get_neighbours(std::vector<std::vector<Cell>> &grid, size_t x, size_t y)
+void Cell::get_neighbours(std::vector<std::vector<Cell> > &grid, size_t x, size_t y)
 {
     _neighbours = 0;
     if (_mine)
@@ -44,7 +44,7 @@ bool Cell::is_a_mine()
 {
     return _mine;
 }
-bool Cell::discover(std::vector<std::vector<Cell>> &grid, size_t x, size_t y)
+bool Cell::discover(std::vector<std::vector<Cell> > &grid, size_t x, size_t y)
 {
     if (is_a_mine())
         return true;

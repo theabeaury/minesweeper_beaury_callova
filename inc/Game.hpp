@@ -5,7 +5,7 @@
 class Game
 {
 private:
-    std::vector<std::vector<Cell>> _Grid;
+    std::vector<std::vector<Cell> > _Grid;
     size_t _number_of_mines;
     size_t _number_of_flags;
     bool _has_lost = false;
