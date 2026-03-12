@@ -107,11 +107,11 @@ void Game::draw()
 }
 int Game::get_width()
 {
-    return 1;
+    return _Grid[0].size();
 }
 int Game::get_height()
 {
-    return 1;
+    return _Grid.size();
 }
 bool Game::has_lost()
 {
